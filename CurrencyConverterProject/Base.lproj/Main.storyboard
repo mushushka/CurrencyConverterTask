@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyConverterProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wBA-80-Bsu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="COM-o0-DGc">
+                                <rect key="frame" x="190.5" y="307" width="168.5" height="216"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.24882277397260275" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kw1-wC-FoV">
+                                <rect key="frame" x="16" y="307" width="169" height="216"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.25" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XVg-jy-4sx">
+                                <rect key="frame" x="178" y="324" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkp-18-Ku8">
+                                <rect key="frame" x="16" y="531" width="344" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="ahf-bf-cFj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XVg-jy-4sx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="304" id="92f-lc-r9F"/>
+                            <constraint firstItem="wBA-80-Bsu" firstAttribute="centerX" secondItem="XVg-jy-4sx" secondAttribute="centerX" id="Amn-gd-wxk"/>
+                            <constraint firstItem="wBA-80-Bsu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Eg7-zo-dAb"/>
+                            <constraint firstItem="wBA-80-Bsu" firstAttribute="centerY" secondItem="XVg-jy-4sx" secondAttribute="centerY" id="IWi-Ii-Fi1"/>
+                            <constraint firstItem="COM-o0-DGc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="KX6-Ja-Yc1"/>
+                            <constraint firstItem="Dkp-18-Ku8" firstAttribute="centerX" secondItem="XVg-jy-4sx" secondAttribute="centerX" id="PWo-7u-MiL"/>
+                            <constraint firstItem="wBA-80-Bsu" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="UDj-eg-1Wr"/>
+                            <constraint firstAttribute="trailing" secondItem="wBA-80-Bsu" secondAttribute="trailing" id="UbS-JN-Xjd"/>
+                            <constraint firstItem="Dkp-18-Ku8" firstAttribute="top" secondItem="kw1-wC-FoV" secondAttribute="bottom" constant="8" symbolic="YES" id="VQq-TP-Xg5"/>
+                            <constraint firstItem="kw1-wC-FoV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="Wmf-s7-jQd"/>
+                            <constraint firstItem="Dkp-18-Ku8" firstAttribute="leading" secondItem="kw1-wC-FoV" secondAttribute="leading" id="Y2T-Ho-2XM"/>
+                            <constraint firstItem="kw1-wC-FoV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dpH-N7-IpZ"/>
+                            <constraint firstItem="Dkp-18-Ku8" firstAttribute="top" secondItem="COM-o0-DGc" secondAttribute="bottom" constant="8" symbolic="YES" id="ehZ-UP-n1G"/>
+                            <constraint firstAttribute="bottom" secondItem="Dkp-18-Ku8" secondAttribute="bottom" constant="20" symbolic="YES" id="kLf-q7-JTa"/>
+                            <constraint firstItem="COM-o0-DGc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kaZ-Mf-3bP"/>
+                            <constraint firstItem="wBA-80-Bsu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tNd-8I-tWw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="XVg-jy-4sx" id="wHj-99-3Nj"/>
+                        <outlet property="currencyRelationLabel" destination="Dkp-18-Ku8" id="qzi-nY-TiV"/>
+                        <outlet property="initialCurrency" destination="kw1-wC-FoV" id="hUL-QE-tAl"/>
+                        <outlet property="neededCurrency" destination="COM-o0-DGc" id="j9V-y3-FUt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="horseBackground" width="1242" height="2208"/>
+    </resources>
 </document>

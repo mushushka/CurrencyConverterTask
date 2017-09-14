@@ -13,6 +13,7 @@
 		9E8B984C1F6AA7D700E22F73 /* CurrencyConverterProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B984A1F6AA7D700E22F73 /* CurrencyConverterProject.xcdatamodeld */; };
 		9E8B984E1F6AA7D700E22F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B984D1F6AA7D700E22F73 /* Assets.xcassets */; };
 		9E8B98511F6AA7D700E22F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B984F1F6AA7D700E22F73 /* LaunchScreen.storyboard */; };
+		9E8B98591F6ABF0D00E22F73 /* PickerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B98581F6ABF0D00E22F73 /* PickerViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9E8B984D1F6AA7D700E22F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E8B98501F6AA7D700E22F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E8B98521F6AA7D700E22F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8B98581F6ABF0D00E22F73 /* PickerViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				9E8B98431F6AA7D600E22F73 /* AppDelegate.swift */,
 				9E8B98451F6AA7D600E22F73 /* ViewController.swift */,
+				9E8B98581F6ABF0D00E22F73 /* PickerViewExtension.swift */,
 				9E8B98471F6AA7D600E22F73 /* Main.storyboard */,
 				9E8B984D1F6AA7D700E22F73 /* Assets.xcassets */,
 				9E8B984F1F6AA7D700E22F73 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				9E8B98461F6AA7D600E22F73 /* ViewController.swift in Sources */,
 				9E8B98441F6AA7D600E22F73 /* AppDelegate.swift in Sources */,
+				9E8B98591F6ABF0D00E22F73 /* PickerViewExtension.swift in Sources */,
 				9E8B984C1F6AA7D700E22F73 /* CurrencyConverterProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
