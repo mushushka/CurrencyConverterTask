@@ -1,3 +1,3 @@
-# Currency сonverter еask for Tinkoff bank 
+# Currency сonverter task for Tinkoff bank 
 
 
